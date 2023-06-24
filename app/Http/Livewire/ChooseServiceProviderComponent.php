@@ -25,7 +25,7 @@ class ChooseServiceProviderComponent extends Component
         $request->service_id = $this->service_id;
         $request->status = 'Waiting';
         $request->save();
-        session()->flash('message','Request has been sended');
+        session()->flash('message','Request sent');
     }
 
     public function render()
